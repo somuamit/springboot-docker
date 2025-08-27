@@ -9,9 +9,9 @@ phases:
     - COMMIT_HASH=$(echo $CODEBUILD_RESOLVED_SOURCE_VERSION | cut -c 1-7)
     - IMAGE_TAG=${COMMIT_HASH:=latest}
     # Replace with your application name
-    - APPLICATION_NAME=demo
+    - APPLICATION_NAME=springboot-docker-repo
     # Replace with this 435320931996.dkr.ecr.ap-south-1.amazonaws.com to your repository URI
-    - REPOSITORY_URI=435320931996.dkr.ecr.ap-south-1.amazonaws.com/$APPLICATION_NAME
+    - REPOSITORY_URI=336815833509.dkr.ecr.ap-south-1.amazonaws.com/$APPLICATION_NAME
   build: 
     commands: 
     - echo Build started on `date` 
