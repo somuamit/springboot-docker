@@ -1,5 +1,6 @@
 # Use OpenJDK 17 base image
-FROM openjdk:17
+#FROM openjdk:17
+FROM amazoncorretto:17
 
 # Set working directory inside container
 WORKDIR /app
