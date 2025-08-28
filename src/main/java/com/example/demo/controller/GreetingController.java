@@ -9,4 +9,13 @@ public class GreetingController {
     public String greetConsumer() {
         return "Hello from a basic app.";
     }
+	
+	@GetMapping("/hello")
+    public String helloConsumer() {
+        return "Big Hello.";
+    }
+	@GetMapping("/")
+    public String landind() {
+        return "Done set up";
+    }
 }
